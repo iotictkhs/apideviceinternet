@@ -5,7 +5,7 @@
 
 Options +FollowSymLinks
 RewriteEngine On
-RewriteBase /deviceinformation/
+RewriteBase /apideviceinternet/
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
