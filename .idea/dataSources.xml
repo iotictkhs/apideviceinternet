@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="erp@dev.quick.com" uuid="032255a1-7fe7-4d61-b598-605c4d10f8c6">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <remarks>ERP database for dev.quick.com</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://dev.quick.com:5432/erp</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="oracle" uuid="30c48438-3c17-4631-a3ce-aaecec6e1d04">
+      <driver-ref>oracle</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@192.168.7.3:1522:DEV</jdbc-url>
+    </data-source>
+  </component>
+</project>
