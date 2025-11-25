@@ -59,11 +59,11 @@ class C_Web extends CI_Controller
 
       // 📋 Definisikan aturan validasi di sini
       $rules = [
-        'longitude' => ['required' => true, 'type' => 'string'],
-        'latitude' => ['required' => true, 'type' => 'string'],
-        'voltage' => ['required' => true, 'type' => 'string'],
-        'accurate' => ['required' => true, 'type' => 'string'],
-        'waktu_rtc' => ['required' => true, 'type' => 'string'],
+        'alat' => ['required' => true, 'type' => 'string'],
+        'kondisi' => ['required' => true, 'type' => 'string'],
+        'ipaddress' => ['required' => true, 'type' => 'string'],
+        'version' => ['required' => true, 'type' => 'string'],
+        'build_date' => ['required' => true, 'type' => 'string'],
       ];
 
       // ✅ Jalankan validasi -> tiap fiel jika belum di isi(!isset) maka akan print ini
@@ -145,11 +145,11 @@ class C_Web extends CI_Controller
 
       // 📋 Aturan validasi field (sesuaikan dengan tipe data agar masuk ke validasi tipe data)
       $rules = [
-        'longitude' => ['required' => true, 'type' => 'string'],
-        'latitude' => ['required' => true, 'type' => 'string'],
-        'voltage' => ['required' => true, 'type' => 'string'],
-        'accurate' => ['required' => true, 'type' => 'string'],
-        'waktu_rtc' => ['required' => true, 'type' => 'string'],
+        'alat' => ['required' => true, 'type' => 'string'],
+        'kondisi' => ['required' => true, 'type' => 'string'],
+        'ipaddress' => ['required' => true, 'type' => 'string'],
+        'version' => ['required' => true, 'type' => 'string'],
+        'build_date' => ['required' => true, 'type' => 'string'],
       ];
 
       // ✅ Jalankan validasi -> tiap fiel jika belum di isi(!isset) maka akan print ini

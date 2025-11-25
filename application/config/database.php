@@ -82,11 +82,11 @@ $db['default'] = array(
 	// 'password' => 'password',
 
 	//Buat connect ke database dev, ini dipake kalo kita mau develop
-	'hostname' => 'postgresql-daffaiotdev.alwaysdata.net',
-	'username' => 'daffaiotdev',
-	'password' => 'Trial123*',
+	'hostname' => '',
+	'username' => '',
+	'password' => '',
 
-	'database' => 'daffaiotdev_gps',
+	'database' => '',
 	'dbdriver' => 'postgre',
 	'dbprefix' => '',
 	'pconnect' => TRUE,

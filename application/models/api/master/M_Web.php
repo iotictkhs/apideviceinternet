@@ -26,7 +26,7 @@ class M_Web extends CI_Model
   public function save($data)
   {
     // $id = $this->db->insert_id(); ----> ga dipake lagi karna syntaxnya udah ga valid
-    $this->db->insert('arduino.data_monitoring_gps', $data);
+    $this->db->insert('arduino.arduino_gps_device_information', $data);
 
     if ($this->db->affected_rows()) {
       return [
@@ -44,7 +44,7 @@ class M_Web extends CI_Model
   {
     $data = $this->db->order_by('id', 'desc')
       ->limit(100)
-      ->get('arduino.data_monitoring_gps')->result_array();
+      ->get('arduino.arduino_gps_device_information')->result_array();
     return $data;
   }
   
@@ -52,7 +52,7 @@ class M_Web extends CI_Model
   {
     $data = $this->db->order_by('id', 'desc')
        ->limit(100)
-       ->get('arduino.data_monitoring_gps')->result_array();
+       ->get('arduino.arduino_gps_device_information')->result_array();
      return $data;
   }
 
@@ -60,7 +60,7 @@ class M_Web extends CI_Model
   {
       // ini kita kasih id dan asc agar short by id dan urutkan dari atas(asc)
       $this->db->order_by('id', 'ASC');
-      $query = $this->db->get('arduino.data_monitoring_gps', 1);
+      $query = $this->db->get('arduino.arduino_gps_device_information', 1);
       return $query->row_array();
   }
 
@@ -68,21 +68,21 @@ class M_Web extends CI_Model
   {
       // ini kita kasih id dan asc agar short by id dan urutkan dari atas(decs)
       $this->db->order_by('id', 'DESC');
-      $query = $this->db->get('arduino.data_monitoring_gps', 1);
+      $query = $this->db->get('arduino.arduino_gps_device_information', 1);
       return $query->row_array();
   }
 
   public function getById($id)
   {
     // disini kita bikin get_where dan kita arahin ke table-> field id
-    return $this->db->get_where('arduino.data_monitoring_gps', ['id' => $id])->row_array();
+    return $this->db->get_where('arduino.arduino_gps_device_information', ['id' => $id])->row_array();
   }
 
   public function update($id, $data)
   {
     //update by id, jadi update nya berdasarkan device tapi ada juga ada yg berdasarkan id
     $this->db -> where ('id', $data['id'])
-      ->update('arduino.data_monitoring_gps', $data);
+      ->update('arduino.arduino_gps_device_information', $data);
 
     if ($this->db->affected_rows()) {
       return [
